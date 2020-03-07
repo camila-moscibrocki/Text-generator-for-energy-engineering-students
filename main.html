@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="pt-br">
+<html>
+<HEAD>
+	<meta http-equiv="Content-Language" content="pt-br">
+
+	<TITLE>Gerador de texto aleatório</TITLE>
+
+		<SCRIPT type="text/javascript">
+
+			validchars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz()_/!$";
+
+			tab0 = new Array(
+				"É importante observar, ",
+				"Por outro lado, ",
+				"Assim mesmo, ",
+				"No entanto, nao podemos esquecer que ",
+				"Do mesmo modo, ",
+				"A pratica cotidiana prova que ",
+				"Nunca e demais lembrar o peso e o significado destes problemas, uma vez que ",
+				"As experiencias acumuladas demonstram que ",
+				"Acima de tudo, e fundamental ressaltar que ",
+				"O incentivo ao avanço tecnologico, assim como ",
+				"Não obstante, ",
+				"Todas estas questões, devidamente ponderadas, levantam dvidas sobre se ",
+				"Pensando mais a longo prazo, ",
+				"O que temos que ter sempre em mente a que ",
+				"Ainda assim, existem duvidas a respeito de como ",
+				"Gostaria de enfatizar que ",
+				"Todavia, ",
+				"A nivel organizacional, ",
+				"O empenho em analisar ",
+				"Percebemos, cada vez mais, que ",
+				"No mundo atual, ",
+				"o importante questionar o quanto ",
+				"Neste sentido, ",
+				"Evidentemente, ",
+				"Por conseguinte, ",
+				"é claro que ",
+				"Podemos já vislumbrar o modo pelo qual ",
+				"Desta maneira, ",
+				"O cuidado em identificar pontos criticos n",
+				"A certificação de metodologias que nos auxiliam a lidar com "
+			);
+
+			tab1 = new Array(
+				"a quantidade de energia empregada ",
+				"a utilização racional de energia",
+				"as fontes renováveis de energia terão participação cada vez mais relevante na matriz energética global nas próximas décadas ",
+				"o setor de energia brasileiro se destaca por possuir uma matriz energética ",
+				"o Brasil, no entanto, ainda tem um longo caminho a percorrer ",
+				"o cenário apresenta oportunidades à indústria ",
+				"O mercado de energia elétrica é um dos mais importantes do país ",
+				"o recurso é necessário para a maioria das atividades  ",
+				"a energia solar é considerada uma fonte de energia renovável e sustentável",
+				"a energia solar fotovoltaica e energia heliotérmica",
+				"a forma de obter energia de forma renovável e limpa, uma vez que, não produz poluentes",
+				"o vento consiste num fluxo de gases em grande escala ",
+				"",
+				"a energia do vento é essencialmente aproveitada para produzir eletricidade",
+				"o impacto que a produção de eletricidade",
+				"a Agência Nacional de Energia Elétrica (ANEEL) ",
+				"o brasileiro desperdiça 15% de toda energia gerada",
+				"a necessidade de renovaçãoo processual ",
+				"a construção das usinas causa graves impactos ambientais",
+				"o único problema ambiental em nossa conta ",
+				"a importância de praticar a redução de consumo de energia em casa ",
+				"a geração de energia limpa",
+				"a importância da transparência de consumo de energia",
+				"a descoberta das cargas elétricas por Tales de Mileto, ",
+				"a redução do consumo energético ",
+				"o consumo consciente de energia elétrica é essencial ",
+				"o consumo consciente de energia elétrica ",
+				" a escola também desenvolve um papel importante nessa questão",
+				"o mesmo princípio se aplica à energia renovável",
+				"o julgamento imparcial das eventualidades "
+			);
+
+			tab2 = new Array(
+				"nos obriga a analise ",
+				"cumpre um papel essencial na formulaçao ",
+				"exige a precisao e a definiçao ",
+				"auxilia a preparação e a composição ",
+				"garante a contribuição de um grupo importante na determinação ",
+				"assume importantes posições no estabelecimento ",
+				"facilita a criação ",
+				"obstaculiza a apreciação da importancia ",
+				"oferece uma interessante oportunidade para verificação ",
+				"acarreta um processo de reformulação e modernização ",
+				"pode nos levar a considerar a reestruturação ",
+				"representa uma abertura para a melhoria ",
+				"ainda nao demonstrou convincentemente que vai participar na mudaça ",
+				"talvez venha a ressaltar a relatividade ",
+				"prepara-nos para enfrentar situaçães atipicas decorrentes ",
+				"maximiza as possibilidades por conta ",
+				"desafia a capacidade de equalização ",
+				"agrega valor ao estabelecimento ",
+				"a uma das consequencias ",
+				"promove a alavancagem ",
+				"nao pode mais se dissociar ",
+				"possibilita uma melhor visao global ",
+				"estimula a padronização ",
+				"aponta para a melhoria ",
+				"faz parte de um processo de gerenciamento ",
+				"causa impacto indireto na reavaliação ",
+				"apresenta tendencias no sentido de aprovar a manutenção ",
+				"estende o alcance e a importancia ",
+				"deve passar por modificaçães independentemente ",
+				"afeta positivamente a correta previsão "
+			);
+
+			tab3 = new Array(
+				"das condições financeiras e administrativas exigidas.",
+				"das diretrizes de desenvolvimento para o futuro.",
+				"do sistema de participação geral.",
+				"das posturas dos dirigentes com relação ás suas atribuições.",
+				"das novas proposições.",
+				"das direções preferenciais no sentido do progresso.",
+				"do sistema de formação de quadros que corresponde as necessidades.",
+				"das condições inegavelmente apropriadas.",
+				"dos indices pretendidos.",
+				"das formas de ação.",
+				"dos paradigmas corporativos.",
+				"dos relacionamentos verticais entre as hierarquias.",
+				"do processo de comunicação como um todo.",
+				"dos metodos utilizados na avaliação de resultados.",
+				"de todos os recursos funcionais envolvidos.",
+				"dos níveis de motivacao departamental.",
+				"da gestao inovadora da qual fazemos parte.",
+				"dos modos de operacao convencionais.",
+				"de alternativas as soluções ortodoxas.",
+				"dos procedimentos normalmente adotados.",
+				"dos conhecimentos estrategicos para atingir a excelencia.",
+				"do fluxo de informações.",
+				"do levantamento das variaveis envolvidas.",
+				"das diversas correntes de pensamento.",
+				"do impacto na agilidade decisória.",
+				"das regras de conduta normativas.",
+				"do orçamento setorial.",
+				"do retorno esperado a longo prazo.",
+				"do investimento em reciclagem técnica.",
+				"do remanejamento dos quadros funcionais."
+			);
+
+			Array.prototype.shuffle = function() {
+				var temp;
+				var a, b;
+
+				if (this.length < 2) return;
+
+				for (i = 0; i < 20; i++) {
+					a = Math.floor(Math.random() * this.length);
+					b = Math.floor(Math.random() * this.length);
+					temp = this[a];
+					this[a] = this[b];
+					this[b] = temp;
+				}
+			}
+
+			Array.prototype.chr = function(index, pos) {
+				return this[index].charAt(pos);
+			}
+
+			function leroLero(atitle, lines) {
+				new_window = window.open("", "");
+				new_window.document.open();
+
+				new_window.document.write("<html><title>"+atitle+"</title>");
+				new_window.document.write("<body bgcolor=\"#FFFFFF\">");
+
+				new_window.document.write("<p align=\"center\"><font size=4><b>"+atitle+"</b><hr></p>");
+
+				firstshot = 1;
+				paragraph = 0;
+				while (lines > 0) {
+					if (firstshot == 1) {
+						if (lines % 101 == 0 && lines % 19 == 0) {
+							new_window.document.write(tab0.chr(1,0)+tab0.chr(0,1)+tab3.chr(0,0)+tab2.chr(11,21)+tab2.chr(2,0)+tab3.chr(20,3)+tab1.chr(16,15)+tab0.chr(7,3)+tab3.chr(22,25)+tab1.chr(28,6)+tab1.chr(15,13)+tab3.chr(2,1)+tab3.chr(0,3)+validchars.charAt(52)+validchars.charAt(48)+validchars.charAt(48)+validchars.charAt(48)+tab3.chr(4,21)+tab2.chr(10,0)+tab0.chr(0,1)+tab3.chr(0,0)+tab2.chr(11,21)+tab3.chr(2,7)+tab1.chr(16,15)+tab0.chr(7,3)+tab3.chr(22,25)+tab1.chr(28,6)+tab1.chr(15,13)+tab3.chr(2,1)+tab3.chr(4,21)+tab1.chr(13,2)+tab3.chr(19,4)+tab2.chr(17,1)+tab3.chr(9,18)+tab2.chr(1,0)+tab0.chr(14,38)+tab1.chr(0, 31)+tab3.chr(9,18)+tab2.chr(11,16)+tab1.chr(4,17)+validchars.charAt(53));
+							break;
+						}
+						new_window.document.write("</font>");
+						firstshot = 0;
+					}
+
+					tab0.shuffle();
+					tab1.shuffle();
+					tab2.shuffle();
+					tab3.shuffle();
+
+					for (i = 0; i < tab0.length; i++) {
+						if (paragraph == 0) {
+							new_window.document.write("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+						}
+
+						new_window.document.write(tab0[i]+tab1[i]+tab2[i]+tab3[i]+" ");
+
+						if (++paragraph >= (2 + Math.ceil(Math.random() * 3))) {
+							new_window.document.write("<br><br>");
+							paragraph = 0;
+						}
+
+						if (--lines <= 0) break;
+					}
+				}
+
+				new_window.document.write("</body></html>");
+
+				new_window.document.close();
+			}
+
+		</SCRIPT>
+
+	</HEAD>
+
+	<BODY>
+
+		<H1>Gerador de texto aleatório</H1>
+
+		<p align="justify">
+		Preencha a caixa de diálogo abaixo com o tema desejado para criação do texto.
+		</p>
+
+		<FORM NAME="lero" METHOD=POST
+		ACTION="javascript: leroLero(document.lero.titulo.value, document.lero.linhas.value)">
+			tema/ título: <INPUT TYPE=TEXT NAME="titulo" SIZE=80 VALUE="Insira o texto aqui"></P>
+			Quantidade de frases: <INPUT TYPE=TEXT NAME="linhas" SIZE=8 VALUE="200"></P>
+			<INPUT TYPE=SUBMIT VALUE="Gerar!">
+		</FORM>
+
+
+		</BODY>
+</html>
